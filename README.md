@@ -1,7 +1,5 @@
 # 计算机系统结构 选题2 分支预测
 
-计92 张熙至 2018010549
-
 ## 实现内容
 
 在本次实验中，我使用了与TAGE_SC_L相似的算法，完成了由TAGE Predictor、Loop Predictor、Corrector Filter等部件组成的分支预测器。在cbp4的、32KB的测试中，MPKI为3.097。
