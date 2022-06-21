@@ -2,8 +2,6 @@
 
 计92 张熙至 2018010549
 
-[toc]
-
 ## 实现内容
 
 在本次实验中，我使用了与TAGE_SC_L相似的算法，完成了由TAGE Predictor、Loop Predictor、Corrector Filter等部件组成的分支预测器。在cbp4的、32KB的测试中，MPKI为3.097。
@@ -30,7 +28,7 @@ predictor.h/cc：调参后，并且修正了TAGEOpt中对于use_alt的update的�
 
 整个算法部件由TAGE、Loop Predictor、Corrector Filter三个主要部件组成。我完成代码的时候是按照以上顺序依次完成三个部件，且三个部件之间比较独立，因此将分开叙述。
 
-![演示文稿1](.\pictures\演示文稿1.jpg)
+![演示文稿1.jpg](https://s2.loli.net/2022/06/22/iHA6eb3VPkOSU2c.jpg)
 
 ### TAGE
 
@@ -40,7 +38,7 @@ TAGE是一种ppm-like的分支预测器，该方法的我在实现TAGE时主要�
 
 TAGE由一个BaseTable和M个Tagged Table组成。
 
-![2](.\pictures\2.png)
+![2.png](https://s2.loli.net/2022/06/22/blwRtO7Yygcip2e.png)
 
 BaseTable(图中T0）是一个简单的根据PC索引的二位饱和计数器，每个表项对应一个index的饱和计数器。
 
@@ -200,7 +198,7 @@ struct CorrectorFilterEntry{
 
 最终测试结果如图所示，MPKI为3.097。
 
-![3](.\pictures\3.png)
+![3.png](https://s2.loli.net/2022/06/22/jzt1bGdrvUBZ29i.png)
 
 ## 参考文献
 
