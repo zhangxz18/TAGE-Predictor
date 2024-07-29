@@ -20,7 +20,7 @@ TAGE_SC_LPredictor.h/cc：TAGE with loop table and Corrector filter
 
 predictor.h/cc：调参后，并且修正了TAGEOpt中对于use_alt的update的错误
 
-如果想要运行某个预测器，用它替换掉cbp4的`sim/predictor.h`和`sim/predictor.cc`即可。
+如果想要运行某个预测器，用它替换掉cbp4（https://jilp.org/cbp2014/framework.html）的`sim/predictor.h`和`sim/predictor.cc`即可。
 
 ## 算法设计
 
